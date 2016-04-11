@@ -40,7 +40,7 @@ The Informa 'top-bar' has a reliance on the jQuery library (no particular versio
    ```<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>```
 
 4. Add references to the 'top-bar' Javascript file in the ```<head>``` section or at the base of the ```<body>``` section of the page. 
-   For example: ```<link href="css/top-bar.css" rel="stylesheet" media="screen" />```
+   For example: ```<script src="/main.js"></script>```
    Alternatively you may want to integrate the script contents into an existing Javascript file to reduce HTTP-requests.
 
 5. Add the folowing HTML fragment into the markup as the first child of the ```<body>``` section. 
@@ -58,19 +58,22 @@ The Informa 'top-bar' has a reliance on the jQuery library (no particular versio
 				</ul>
 			</div>
 			<div id="iribbon-right">
-				<p>This site is operated by a business or businesses owned by Informa PLC and all copyright resides with them. Informa PLC's registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. Number 8860726.</p>
+				<p>This site is operated by a business or businesses owned by Informa PLC and all copyright resides with them. 
+                Informa PLC's registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. Number 8860726.</p>
 			</div>
 		</div>
 	</div>
 ```
-
-
-
-
-
-
+   **Note**: The initial paragraph should be edited to reflect the title of the site to which it is being applied.
 
 
 ##Troubleshooting
 
-Problems that may be encountered.
+As the 'top-bar' is operated via scripting it is important to ensure that the content is always accessible and available in an
+unpredictable user-agent environment which may preclude scripting. The 'top-bar' has therefore been designed from a 'progressive
+enhancement' perspective - its content is plain HTML and will always be delivered and legible. However, this means that on some 
+sites where there may be a small delay between the HTML being rendered and the script initiating the close/open mechanism. This will
+potantially result in a perceivable flash of the 'top-bar' in an open state before being closed. This is most likely to occur on 
+sites where numerous other scripts are potentially causing delays by implementation or design. 
+
+
