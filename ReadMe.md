@@ -7,7 +7,7 @@ discussed in the ['Informa Web Estate Guidelines' PDF document](https://informap
 
 Guidance of the design, layout and colours is available in the ['Brand Guideline' PDF document](http://indigo.informa.com/informa/Brand-Centre/Documents/).
 
-**Note**: the 'top-bar' files in the current repository are the latest files.
+**Note**: the 'top-bar' files in the current repository are the latest file.
 
 
 ##Features
