@@ -1,6 +1,6 @@
-#Informa 'top-bar'
+# Informa 'top-bar'
 
-##Summary
+## Summary
 
 The Informa 'top-bar' is universal branding and must be applied to every Informa website. It's implementation is
 discussed in the ['Informa Web Estate Guidelines' PDF document](https://informaplc.sharepoint.com/teams/rooms4/webbestpract/Shared%20Documents/Forms/AllItems.aspx) available via the 'Informa Web Best Practice' Indigo room.
@@ -10,7 +10,7 @@ Guidance of the design, layout and colours is available in the ['Brand Guideline
 **Note**: the 'top-bar' files in the current repository are the latest file.
 
 
-##Features
+## Features
 
 The Informa 'top-bar' provides a consistent branding incorporating ownership details and general Informa links. It is essentially a 
 HTML fragment styled with its own Cascading Stylesheet and scripting functionality. The panel opens and closes via mouse or keyboard
@@ -23,12 +23,12 @@ the absence of scripting availability. In the latter circumstance the 'top-bar' 
 control button.
 
 
-##Requirements
+## Requirements
 
 The Informa 'top-bar' has a reliance on the jQuery library (no particular version).
 
 
-##Implementation
+## Implementation
 
 1. Add references to the CSS file in the ```<head>``` section of your web page. For example:
    ```<link href="css/top-bar.css" rel="stylesheet" media="screen" />```
@@ -67,7 +67,7 @@ The Informa 'top-bar' has a reliance on the jQuery library (no particular versio
    **Note**: The initial paragraph should be edited to reflect the title of the site to which it is being applied.
 
 
-##Troubleshooting
+## Troubleshooting
 
 As the 'top-bar' is operated via scripting it is important to ensure that the content is always accessible and available in an
 unpredictable user-agent environment which may preclude scripting. The 'top-bar' has therefore been designed from a 'progressive
